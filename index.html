@@ -204,8 +204,8 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-3">Experiments in the Real-World</h2>
-          <div class="content">
+          <h2 class="title is-3">Real-World Experimental environments</h2>
+          <!-- <div class="content">
             <h2 class="title is-4">Experimental environment</h2>
             <center>
               <img src="static/images/gazebo_initial.png" class="center-image blend-img-background"/>
@@ -215,7 +215,7 @@
                 We created a simulated environment that mirrored the real-world setting used for evaluation. We scanned the real-world setup using a 3D scanner and transferred the 3D model to the Gazebo simulator. The corresponding initial E2Map is displayed in the figure on the right.
               </p>
             </div>
-          </div>
+          </div> -->
           
           <div class="content">
             <h2 class="title is-4">Experimental Scenarios</h2>
@@ -224,11 +224,8 @@
             </center>
             <div class="level-set has-text-justified">
               <p>
-                In the simulated environment, we designed three scenarios to assess our method. First, after building the initial E2Map, we introduced static obstacles, such as danger signs (danger sign), to evaluate the method's ability to adapt to environmental changes. Second, we positioned a human figure behind a wall and had them step out unexpectedly (human-wall). Third, we added a dynamic door that opened unexpectedly as the robot approached (dynamic door). The human-wall and dynamic door scenarios tested whether our method could adjust behavior based on experiences with dynamic events, improving navigation performance.
-              </p>
-            </div>
-          </div>
-
+                We designed three experimental scenarios, SA, SB, and SC, to evaluate the effectiveness of our proposed NLoS pedestrian localization system in darting-out situations near parked vehicles. In SA, a single pedestrian suddenly appears from behind a parked vehicle, testing the system’s ability to detect and track a pedestrian in a fully NLoS setting where direct visibility is obstructed. SB involves two pedestrians emerging sequentially from behind a parked vehicle, where the first pedestrian acts as an additional occlusion for the second pedestrian. This scenario evaluates the system’s ability to detect a pedestrian under dynamically changing occlusion conditions. SC consists of one pedestrian walking along a clear Line-of-Sight (LOS) path while another pedestrian emerges from the NLoS region, demonstrating the system's capability to simultaneously detect pedestrians in both LOS and NLoS conditions. These scenarios assess the system’s robustness in handling various occlusions caused by parked vehicles and moving pedestrians.          
+              </div>
           <div class="content">
             <h2 class="title is-4">Quantitative Result</h2>
             <center>
