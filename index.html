@@ -48,7 +48,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Radar-Based NLoS Pedestrian Localization for<br>Darting-Out Scenarios Near Parked Vehicles<br>with Camera-Assisted Point Cloud Interpretation</h1>
+            <h1 class="title is-1 publication-title">Radar-Based NLoS Pedestrian Localization<br>for Darting-Out Scenarios Near Parked Vehicles with<br>Camera-Assisted Point Cloud Interpretation</h1>
             <h2 class="title is-5 publlication-title">IROS 2025</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
@@ -170,7 +170,7 @@
           </center>
           <div class="level-set has-text-justified">
             <p>
-               E2Map is a spatial map that captures the agent's emotional responses to its experiences. Our method enables one-shot behavior adjustments in stochastic environments by updating the E2Map through the diverse capabilities of LLMs and LMM.
+              A novel radar-based non-line-of-sight (NLoS) pedestrian localization framework that enables robust detection of darting-out pedestrians near parked vehicles by integrating radar signals with camera-assisted point cloud interpretation.
             </p>
           </div>
         </div>
@@ -186,11 +186,11 @@
         <div class="content">
           <h2 class="title is-3">System Overview</h2>
           <center>
-          <img src="static/images/e2map_arch.png" class="center-image blend-img-background"/>
+          <img src="static/images/nlos_arch.png" class="center-image blend-img-background"/>
           </center>
           <div class="level-set has-text-justified">
             <p>
-               System Overview: (a) E2Map is created by embedding visual-language features and emotion parameters into corresponding grid cells. (b) When a user provides a language instruction, an LLM generates code through goal selection APIs to define goals to reach. (c) The planning algorithm then uses emotion as a cost function to determine the optimal path to the goal.  (d) If the agent encounters unexpected events during navigation, the E2Map is updated through the sequential operation of the event descriptor and emotion evaluator. Following the update, the planning algorithm replans the path to adjust the agent’s behavior in a one-shot manner.
+              System Overview: The proposed system leverages radar and camera-based depth perception to enable Non-Line-of-Sight (NLoS) pedestrian localization in darting-out scenarios near parked vehicles. First, the camera assistant module processes a front camera image to perform vehicle segmentation and generate a depth point cloud (PCD), capturing spatial depth information. Next, the spatial inference module integrates the vehicle depth PCD with radar PCD, distinguishing between static and moving points while refining vehicle predictions. Finally, the NLoS object localization module processes the radar data to detect pedestrians hidden behind occlusions and localizes their positions. The final results are validated against BEV ground truth, demonstrating the system’s effectiveness in real-world urban environments.
             </p>
           </div>
         </div>
@@ -204,9 +204,9 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-3">Experiments in Simulated Environments</h2>
+          <h2 class="title is-3">Experiments in the Real-World</h2>
           <div class="content">
-            <h2 class="title is-4">Gazebo environment and Initial E2Map</h2>
+            <h2 class="title is-4">Experimental environment</h2>
             <center>
               <img src="static/images/gazebo_initial.png" class="center-image blend-img-background"/>
             </center>
@@ -239,7 +239,7 @@
           <div class="content">
             <h2 class="title is-4">Qualitative Result</h2>
             <div class="content">
-              <h2 class="title is-5">Danger Sign</h2>
+              <h2 class="title is-5">SA</h2>
               <center>
               <video poster="" id="tree" autoplay controls muted loop height="100%">
                   <!-- Your video here -->
@@ -250,7 +250,7 @@
             </div>
 
             <div class="content">
-              <h2 class="title is-5">Human-Wall</h2>
+              <h2 class="title is-5">SB</h2>
               <center>
               <video poster="" id="tree" autoplay controls muted loop height="100%">
                   <!-- Your video here -->
@@ -261,7 +261,7 @@
             </div>
 
             <div class="content">
-              <h2 class="title is-5">Dynamic Door</h2>
+              <h2 class="title is-5">SC</h2>
               <center>
               <video poster="" id="tree" autoplay controls muted loop height="100%">
                   <!-- Your video here -->
