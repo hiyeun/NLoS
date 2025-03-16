@@ -159,7 +159,7 @@
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -181,9 +181,9 @@
       <div class="column is-full">
         <div class="content">
           <h2 class="title is-3">Concept</h2>
-          <center>
-          <img src="static/images/concept.png" class="center-image blend-img-background"/>
-          </center>
+          <figure class="image is-fullwidth">
+            <img src="static/images/concept.png" class="blend-img-background">
+          </figure>
           <div class="level-set has-text-justified">
             <p>
               A novel radar-based non-line-of-sight (NLoS) pedestrian localization framework that enables robust detection of darting-out pedestrians near parked vehicles by integrating radar signals with camera-assisted point cloud interpretation.
@@ -201,9 +201,9 @@
       <div class="column is-full">
         <div class="content">
           <h2 class="title is-3">System Overview</h2>
-          <center>
-          <img src="static/images/nlos_arch.png" class="center-image blend-img-background"/>
-          </center>
+          <figure class="image is-fullwidth">
+            <img src="static/images/nlos_arch.png" class="blend-img-background">
+          </figure>
           <div class="level-set has-text-justified">
             <p>
               System Overview: The proposed system leverages radar and camera-based depth perception to enable Non-Line-of-Sight (NLoS) pedestrian localization in darting-out scenarios near parked vehicles. First, the camera assistant module processes a front camera image to perform vehicle segmentation and generate a depth point cloud (PCD), capturing spatial depth information. Next, the spatial inference module integrates the vehicle depth PCD with radar PCD, distinguishing between static and moving points while refining vehicle predictions. Finally, the NLoS object localization module processes the radar data to detect pedestrians hidden behind occlusions and localizes their positions. The final results are validated against BEV ground truth, demonstrating the system’s effectiveness in real-world urban environments.
@@ -235,9 +235,9 @@
           
           <div class="content">
             <h2 class="title is-4">Experimental Scenarios</h2>
-            <center>
+            <figure class="image is-fullwidth">
               <img src="static/images/three_env.png" class="center-image blend-img-background"/>
-            </center>
+            </figure>
             <div class="level-set has-text-justified">
               <p>
                 We designed three experimental scenarios, SA, SB, and SC, to evaluate the effectiveness of our proposed NLoS pedestrian localization system in darting-out situations near parked vehicles. In SA, a single pedestrian suddenly appears from behind a parked vehicle, testing the system’s ability to detect and track a pedestrian in a fully NLoS setting where direct visibility is obstructed. SB involves two pedestrians emerging sequentially from behind a parked vehicle, where the first pedestrian acts as an additional occlusion for the second pedestrian. This scenario evaluates the system’s ability to detect a pedestrian under dynamically changing occlusion conditions. SC consists of one pedestrian walking along a clear Line-of-Sight (LOS) path while another pedestrian emerges from the NLoS region, demonstrating the system's capability to simultaneously detect pedestrians in both LOS and NLoS conditions. These scenarios assess the system’s robustness in handling various occlusions caused by parked vehicles and moving pedestrians.          
