@@ -149,32 +149,15 @@
       <div class="column is-full">
         <div class="content">
           <h2 class="title is-3 has-text-centered">Target Problem</h2>
-          <video id="cctv-video" controls autoplay muted playsinline width="100%"></video>
+          <iframe width="100%" height="500px" 
+                  src="https://www.youtube.com/embed/psThmJM8h_I?start=11" 
+                  frameborder="0" allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script>
-  var video = document.getElementById('cctv-video');
-  var videoSrc = "https://dh5.cntv.cdn20.com/asp/h5e/hls/main/0303000a/3/default/845873bc38cd44a680cd02e6999a6114/main.m3u8?maxbr=2048&contentid=15120519184043";
-
-  if (Hls.isSupported()) {
-    var hls = new Hls();
-    hls.loadSource(videoSrc);
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MANIFEST_PARSED, function() {
-      video.play();
-    });
-  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = videoSrc;
-    video.addEventListener('loadedmetadata', function() {
-      video.play();
-    });
-  }
-</script>
 
 
 
