@@ -143,17 +143,17 @@
   </div>
 </section> -->
 
-
 <section class="hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
           <h2 class="title is-3 has-text-centered">Target Problem</h2>
-          <iframe src="https://tv.cctv.com/2024/10/12/VIDEuF1ZsWuSzld0uz4dX6rz241012.shtml" 
-                  width="100%" height="500px" 
-                  allowfullscreen>
-          </iframe>
+          <a href="https://tv.cctv.com/2024/10/12/VIDEuF1ZsWuSzld0uz4dX6rz241012.shtml" 
+             target="_blank" 
+             class="button is-large is-primary">
+            Watch Video on CCTV
+          </a>
         </div>
       </div>
     </div>
@@ -257,15 +257,28 @@
             <div class="level-set has-text-justified">
               <p>
                 We designed three experimental scenarios, SA, SB, and SC, to evaluate the effectiveness of our proposed NLoS pedestrian localization system in darting-out situations near parked vehicles. In SA, a single pedestrian suddenly appears from behind a parked vehicle, testing the system’s ability to detect and track a pedestrian in a fully NLoS setting where direct visibility is obstructed. SB involves two pedestrians emerging sequentially from behind a parked vehicle, where the first pedestrian acts as an additional occlusion for the second pedestrian. This scenario evaluates the system’s ability to detect a pedestrian under dynamically changing occlusion conditions. SC consists of one pedestrian walking along a clear Line-of-Sight (LOS) path while another pedestrian emerges from the NLoS region, demonstrating the system's capability to simultaneously detect pedestrians in both LOS and NLoS conditions. These scenarios assess the system’s robustness in handling various occlusions caused by parked vehicles and moving pedestrians.          
-              
+            
               </div>
-          <!-- <div class="content">
-            <h2 class="title is-4">Quantitative Result</h2>
-            <center>
-              <img src="static/images/simul_quan.png" class="center-image blend-img-background"/>
-            </center>
-          </div> -->
 
+          <div class="content">
+            <h2 class="title is-4">Quantitative Result</h2>
+            <div class="content">
+              <h2 class="title is-5">Spatial inference model</h2>
+              <center>
+                <img src="static/images/spatial_quan.png" class="center-image blend-img-background"/>
+              </center>
+            </div>
+
+            <div class="content">
+              <h2 class="title is-5">Pedestrian localization model</h2>
+              <center>
+                <img src="static/images/localization_quan.png" class="center-image blend-img-background"/>
+              </center>
+            </div>
+          </div>
+
+
+          
           <!-- <div class="content">
             <h2 class="title is-4">Qualitative Result</h2>
             <div class="content">
