@@ -185,7 +185,7 @@
   if (Hls.isSupported()) {
       var hls = new Hls({
           xhrSetup: function(xhr, url) {
-              xhr.withCredentials = true;  // CORS 우회
+              xhr.withCredentials = true;  // CORS 우회 시도
           }
       });
       hls.loadSource(videoSrc);
