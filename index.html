@@ -143,7 +143,7 @@
   </div>
 </section> -->
 
-<section class="hero">
+<!-- <section class="hero">
   <div class="columns is-centered">
     <div class="column is-full">
       <div class="content has-text-centered">
@@ -160,7 +160,43 @@
       </div>
     </div>
   </div>
+</section> -->
+
+
+
+<section class="hero">
+  <div class="columns is-centered">
+    <div class="column is-full">
+      <div class="content has-text-centered">
+        <h2 class="title is-3 has-text-centered">Target Problem</h2>
+        <div style="position: relative; width: 52.8vw; height: 29.7vw; max-width: 960px; max-height: 540px; margin: auto; background: black; overflow: hidden; border-radius: 10px;">
+          <video id="cctv-video" controls style="position: absolute; top: -5%; left: 0; width: 100%; height: 110%; object-fit: cover;"></video>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  var video = document.getElementById('cctv-video');
+  var videoSrc = "https://dh5.cntv.cdn20.com/asp/h5e/hls/main/0303000a/3/default/845873bc38cd44a680cd02e6999a6114/main.m3u8?maxbr=2048&contentid=15120519184043";
+
+  if (Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, function() {
+          video.play();
+      });
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = videoSrc;
+      video.addEventListener('loadedmetadata', function() {
+          video.play();
+      });
+  }
+</script>
+
 
 
 
