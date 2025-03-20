@@ -308,57 +308,63 @@
             </div>
             -->
 
-          <div class="content">
-            <h2 class="title is-4">Qualitative Results : Spatial Inference Model</h2>
-        
-            <div class="video-container">
-                <div class="video-item">
-                    <video autoplay controls muted loop height="100%">
-                        <source src="static/videos/SA_spatial_qual.mp4" type="video/mp4">
-                    </video>
-                    <p class="video-caption">The green dashed box represents the final refined result.</p>
-                </div>
-        
-                <div class="video-item">
-                    <video autoplay controls muted loop height="100%">
-                        <source src="static/videos/SB_spatial_qual.mp4" type="video/mp4">
-                    </video>
-                    <p class="video-caption">The green dashed box represents the final refined result.</p>
-                </div>
-        
-                <div class="video-item">
-                    <video autoplay controls muted loop height="100%">
-                        <source src="static/videos/SC_spatial_qual.mp4" type="video/mp4">
-                    </video>
-                    <p class="video-caption">The green dashed box represents the final refined result.</p>
-                </div>
-            </div>
+            <div class="content">
+              <br>
+              <h2 class="title is-4">Qualitative Results : Spatial Inference Model</h2>
+          
+              <div class="video-container">
+                  <div class="video-item">
+                      <p class="video-label">SA</p>
+                      <video autoplay controls muted loop height="100%">
+                          <source src="static/videos/SA_spatial_qual.mp4" type="video/mp4">
+                      </video>
+                  </div>
+          
+                  <div class="video-item">
+                      <p class="video-label">SB</p>
+                      <video autoplay controls muted loop height="100%">
+                          <source src="static/videos/SB_spatial_qual.mp4" type="video/mp4">
+                      </video>
+                  </div>
+          
+                  <div class="video-item">
+                      <p class="video-label">SC</p>
+                      <video autoplay controls muted loop height="100%">
+                          <source src="static/videos/SC_spatial_qual.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
           </div>
-        
+          
           <style>
-              /* Flexbox를 사용하여 가로 배치 */
+              /* 전체 컨테이너 */
               .video-container {
                   display: flex;
-                  justify-content: center;  /* 가운데 정렬 */
-                  gap: 20px;  /* 각 비디오 사이 간격 */
-                  flex-wrap: wrap; /* 화면이 좁아지면 줄바꿈 */
+                  flex-direction: column;  /* 세로 정렬 */
+                  align-items: center;     /* 가운데 정렬 */
+                  gap: 15px;               /* 요소 간 간격 */
               }
           
+              /* 각 비디오 블록 */
               .video-item {
-                  text-align: center;  /* 텍스트 가운데 정렬 */
-                  max-width: 30%; /* 각 비디오의 최대 너비 */
+                  display: flex;
+                  align-items: center;   /* 글자와 비디오를 수직 정렬 */
+                  gap: 10px;             /* 글자와 비디오 간격 */
               }
           
-              .video-item video {
-                  width: 100%;  /* 부모 요소의 크기에 맞게 조정 */
-                  max-height: 300px; /* 비디오 높이 제한 (필요하면 조정) */
-              }
-          
-              .video-caption {
-                  margin-top: 10px;
-                  font-size: 16px;
-                  color: #228B22;
+              /* 레이블 스타일 (SA, SB, SC) */
+              .video-label {
+                  font-size: 18px;
                   font-weight: bold;
+                  color: #333;
+                  width: 30px; /* 고정 너비 */
+                  text-align: right;
+              }
+          
+              /* 비디오 크기 */
+              .video-item video {
+                  width: 300px;  /* 비디오 너비 조절 */
+                  max-height: 200px; /* 비디오 높이 제한 */
               }
           </style>
           
