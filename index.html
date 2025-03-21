@@ -253,7 +253,7 @@
             </div>
           </div> -->
           
-          <div class="content">
+          <!-- <div class="content">
             <h2 class="title is-4">Experimental Scenarios</h2>
             <figure class="image is-fullwidth">
               <img src="static/images/three_env.png" class="center-image blend-img-background"/>
@@ -262,8 +262,66 @@
               <p>
                 We designed three experimental scenarios, SA, SB, and SC, to evaluate the effectiveness of our proposed NLoS pedestrian localization system in darting-out situations near parked vehicles. In SA, a single pedestrian suddenly appears from behind a parked vehicle, testing the system’s ability to detect and track a pedestrian in a fully NLoS setting where direct visibility is obstructed. SB involves two pedestrians emerging sequentially from behind a parked vehicle, where the first pedestrian acts as an additional occlusion for the second pedestrian. This scenario evaluates the system’s ability to detect a pedestrian under dynamically changing occlusion conditions. SC consists of one pedestrian walking along a clear Line-of-Sight (LOS) path while another pedestrian emerges from the NLoS region, demonstrating the system's capability to simultaneously detect pedestrians in both LOS and NLoS conditions. These scenarios assess the system’s robustness in handling various occlusions caused by parked vehicles and moving pedestrians.          
             
-              </div>
+              </div> -->
 
+
+              <div class="content">
+                <h2 class="title is-4">Experimental Scenarios</h2>
+              
+                <!-- 이미지와 아래 텍스트 묶음 -->
+                <div class="image-container">
+                  <img src="static/images/three_env.png" class="center-image blend-img-background" />
+              
+                  <!-- 아래에 SA, SB, SC 글자 배치 -->
+                  <div class="label-row">
+                    <span class="image-label">SA</span>
+                    <span class="image-label">SB</span>
+                    <span class="image-label">SC</span>
+                  </div>
+                </div>
+              
+                <div class="level-set has-text-justified">
+                  <p>
+                    We designed three experimental scenarios, SA, SB, and SC, to evaluate the effectiveness of our proposed NLoS pedestrian localization system in darting-out situations near parked vehicles. In SA, a single pedestrian suddenly appears from behind a parked vehicle, testing the system’s ability to detect and track a pedestrian in a fully NLoS setting where direct visibility is obstructed. SB involves two pedestrians emerging sequentially from behind a parked vehicle, where the first pedestrian acts as an additional occlusion for the second pedestrian. This scenario evaluates the system’s ability to detect a pedestrian under dynamically changing occlusion conditions. SC consists of one pedestrian walking along a clear Line-of-Sight (LOS) path while another pedestrian emerges from the NLoS region, demonstrating the system's capability to simultaneously detect pedestrians in both LOS and NLoS conditions. These scenarios assess the system’s robustness in handling various occlusions caused by parked vehicles and moving pedestrians.          
+                  </p>
+                </div>
+              </div>
+              
+              <style>
+                .image-container {
+                  text-align: center;
+                  position: relative;
+                  margin-bottom: 10px;
+                }
+              
+                .label-row {
+                  display: flex;
+                  justify-content: space-between;
+                  max-width: 100%;
+                  width: 70%; /* 이미지 너비와 맞춰야 함 */
+                  margin: 10px auto 0 auto;
+                }
+              
+                .image-label {
+                  font-size: 18px;
+                  font-weight: bold;
+                  color: #444;
+                  flex: 1;
+                  text-align: center;
+                }
+              
+                .center-image {
+                  max-width: 70%;
+                  height: auto;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+              </style>
+              
+
+
+            
           
           <!-- <div class="content">
             <br>
